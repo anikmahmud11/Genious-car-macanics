@@ -1,13 +1,13 @@
-[debug] [2021-10-28T10:36:25.959Z] ----------------------------------------------------------------------
-[debug] [2021-10-28T10:36:25.962Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2021-10-28T10:36:25.962Z] CLI Version:   9.21.0
-[debug] [2021-10-28T10:36:25.962Z] Platform:      win32
-[debug] [2021-10-28T10:36:25.962Z] Node Version:  v14.17.1
-[debug] [2021-10-28T10:36:25.963Z] Time:          Thu Oct 28 2021 16:36:25 GMT+0600 (Bangladesh Standard Time)
-[debug] [2021-10-28T10:36:25.963Z] ----------------------------------------------------------------------
+[debug] [2021-10-28T13:28:01.253Z] ----------------------------------------------------------------------
+[debug] [2021-10-28T13:28:01.256Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-28T13:28:01.256Z] CLI Version:   9.21.0
+[debug] [2021-10-28T13:28:01.256Z] Platform:      win32
+[debug] [2021-10-28T13:28:01.256Z] Node Version:  v14.17.1
+[debug] [2021-10-28T13:28:01.257Z] Time:          Thu Oct 28 2021 19:28:01 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-28T13:28:01.257Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2021-10-28T10:36:26.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-10-28T10:36:26.030Z] > authorizing via signed-in user (mzmahmudanik@gmail.com)
+[debug] [2021-10-28T13:28:01.321Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-28T13:28:01.321Z] > authorizing via signed-in user (mzmahmudanik@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -31,17 +31,56 @@ Before we get started, keep in mind:
 [info] but for now we'll just set up a default project.
 [info] 
 [info] i  .firebaserc already has a default project, using genius-car-mechanics. 
-[debug] [2021-10-28T10:36:34.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics [none]
-[debug] [2021-10-28T10:36:35.142Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics 403
-[debug] [2021-10-28T10:36:35.142Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
-[debug] [2021-10-28T10:36:35.142Z] HTTP Error: 403, The caller does not have permission
-[debug] [2021-10-28T10:36:35.367Z] FirebaseError: HTTP Error: 403, The caller does not have permission
-    at module.exports (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
-    at Client.doRequest (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:23)
+[debug] [2021-10-28T13:28:08.176Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics [none]
+[debug] [2021-10-28T13:28:19.345Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics
+[debug] [2021-10-28T13:28:40.397Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics
+    at Client.doRequest (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:213:19)
     at processTicksAndRejections (internal/process/task_queues.js:95:5)
     at async Client.request (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
     at async Object.getFirebaseProject (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
     at async Object.doSetup [as project] (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
     at async init (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project genius-car-mechanics. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-10-28T13:49:50.592Z] ----------------------------------------------------------------------
+[debug] [2021-10-28T13:49:50.595Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-28T13:49:50.595Z] CLI Version:   9.21.0
+[debug] [2021-10-28T13:49:50.596Z] Platform:      win32
+[debug] [2021-10-28T13:49:50.596Z] Node Version:  v14.17.1
+[debug] [2021-10-28T13:49:50.597Z] Time:          Thu Oct 28 2021 19:49:50 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-28T13:49:50.597Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-28T13:49:50.660Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-28T13:49:50.660Z] > authorizing via signed-in user (mzmahmudanik@gmail.com)
+[debug] [2021-10-28T13:49:50.660Z] [iam] checking project genius-car-mechanics for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-28T13:49:50.663Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-28T13:49:50.663Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-28T13:49:51.085Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 28 Oct 2021 13:49:50 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-28T13:49:51.175Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/genius-car-mechanics:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-28T13:49:52.807Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 28 Oct 2021 13:49:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1238","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-28T13:49:52.807Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project genius-car-mechanics:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2021-10-28T13:49:52.809Z] > refreshing access token with scopes: []
+[debug] [2021-10-28T13:49:52.809Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-28T13:49:53.118Z] <<< HTTP RESPONSE 200 {"date":"Thu, 28 Oct 2021 13:49:52 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-28T13:49:53.203Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics [none]
+[debug] [2021-10-28T13:49:53.970Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics 403
+[debug] [2021-10-28T13:49:53.970Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/genius-car-mechanics {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-10-28T13:49:53.970Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-10-28T13:49:55.773Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:240:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:65:9)
+    at async C:\Users\Anik\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:188:17
 [error] 
 [error] Error: Failed to get Firebase project genius-car-mechanics. Please make sure the project exists and your account has permission to access it.
