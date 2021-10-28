@@ -4,12 +4,12 @@ import React, { useEffect, useState } from 'react';
 const ManageServices = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('https://gentle-tor-45100.herokuapp.com/services')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
     const handleDelete = id =>{
-        const url = `https://gentle-tor-45100.herokuapp.com/services/${id}`;
+        const url = `http://localhost:5000/services/${id}`;
         fetch(url, {
             method:'DELETE'
         })

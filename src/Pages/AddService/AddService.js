@@ -9,7 +9,7 @@ const AddService = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://gentle-tor-45100.herokuapp.com/services', data)
+        axios.post('http://localhost:5000/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');
